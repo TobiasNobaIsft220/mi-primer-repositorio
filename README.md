@@ -1,2 +1,2 @@
-# mi-primer-repositorio
+# Mi primer repositorio Hola, soy Tobias Noba. Este es mi primer repositorio en GitHub para la clase de programación.## Sobre mí- Estudiante de Tecnicatura en desarrollo de software - Me interesa aprender sobre Todo lo que tenga que ver con computadoras.
 Mi primer repositorio en GitHub para la clase de programación
