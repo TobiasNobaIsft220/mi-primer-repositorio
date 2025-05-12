@@ -1,0 +1,48 @@
+<!--
+4) Hace un programa de atención en un centro médico. El programa deberá tener un menú
+de 3 opciones. La primera opción es para registrar un paciente nuevo y se deberá guardar
+el nombre del paciente. La segunda opción es para avisar que un consultorio fue liberado y
+se deberá mostrar el paciente que debería entrar al consultorio. La tercera opción es para
+salir del programa.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion de Clinica</title>
+</head>
+<body>
+    <h1>Atencion en un centro medico</h1>
+    <input type="text" id="inputNombre">
+    <button id="botonPaciente">Cargar paciente</button>
+    <button id="botonConsultorio">Verificar consultorio liberado</button>
+    <button id="botonRestablecer">Restablecer los datos del paciente</button>
+    <p id="pRespuesta"></p>
+    <script>
+        let nombre;
+        let nConsultorio;
+        document.getElementById("botonPaciente").addEventListener("click", function(){
+            nombre = document.getElementById("inputNombre").value;
+            if(!nombre){
+                document.getElementById("pRespuesta").textContent = `Debe ingresar un nombre.`;
+            }else{
+                document.getElementById("pRespuesta").textContent = `Paciente ingresado.`;
+            }
+            
+        })
+
+        document.getElementById("botonConsultorio").addEventListener("click", function(){
+            nConsultorio = Math.floor(Math.random() * (20 - 1)) + 1;
+            document.getElementById("pRespuesta").textContent = `El paciente ${nombre} puede ingresar al consultorio ${nConsultorio}.`;
+        })
+
+        document.getElementById("botonRestablecer").addEventListener("click", function(){
+            nombre = "";
+            nConsultorio = 0;
+            document.getElementById("inputNombre").value = ``;
+            document.getElementById("pRespuesta").textContent = ``;
+        })
+    </script>
+</body>
+</html>

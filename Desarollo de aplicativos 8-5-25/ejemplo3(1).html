@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaccion con Javascript</title>
+    <script>
+        console.log("texto en el head");
+    </script>
+</head>
+<body>
+    <h1>Calculadora de edad</h1>
+    <label for="">Año de nacimiento</label>
+    <input type="number" id="nacimiento"> </input>
+    <button type="button" id="idBoton">Calcular edad</button>
+    <p id="edadResultado"></p>
+    <script>
+       function calcularEdad(añoNacimiento){
+        const año = 2025;
+        const edad = año - añoNacimiento;
+        if(edad < 0){
+            return "La edad es menor a 0";
+        }else if(edad > 120){
+            return "La edad ingresada es demasiado grande";
+        }else{
+            return `Tu edad es aproximadamente de ${edad}`;
+        }
+        
+       }
+        const input = document.getElementById("nacimiento").value;
+        const boton = document.getElementById("idBoton");
+        const parrafo = document.getElementById("edadResultado");
+        // Añadir un evento de clic
+        boton.addEventListener("click", function() {
+            parrafo = calcularEdad(number(input));
+            console.log(parrafo);
+            parrafo.textContent = resultado;
+        });
+    </script>
+</body>
+</html>

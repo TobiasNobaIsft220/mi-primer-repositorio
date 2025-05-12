@@ -1,0 +1,47 @@
+<!--
+1)Hacé un programa que realice verificación de identidad. El programa deberá pedir una
+clave al usuario y este tendrá tres oportunidades para poner la clave correcta. a) Si el
+usuario pone la clave incorrecta 3 veces, se deberá imprimir “Acceso denegado”. b) Si puso
+la clave mal, pero todavía le quedan oportunidades, imprimir “Vuelva a ingresar la clave”. c)
+Si se ingresó la clave correcta, imprimir “Acceso otorgado”.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacion de contraseña</title>
+</head>
+<body>
+    <h1>Bienvenido al preograma</h1>
+    <p>Ingrese su contraseña:</p>
+    <input type="text" id="inputContraseña">
+    <button id="botonEnviar">Enviar</button>
+    <p id="pRespuesta"></p>
+    <script>
+        let contraseña = "contraseña123";
+        let intentos = 0;
+
+        
+            
+        document.getElementById("botonEnviar").addEventListener("click",function(){
+            if(intentos < 3){
+                intentos = intentos + 1;
+                    
+                validarContraseña = document.getElementById("inputContraseña").value;
+                    
+                if(contraseña == validarContraseña){
+                    document.getElementById("pRespuesta").textContent = `Acceso otorgado`;
+                }else{
+                    document.getElementById("pRespuesta").textContent = `Vuelva a ingresar la clave`;
+                }
+            }else{
+                document.getElementById("pRespuesta").textContent = `Acceso denegado`;
+            }
+        })
+       
+
+
+    </script>
+</body>
+</html>
