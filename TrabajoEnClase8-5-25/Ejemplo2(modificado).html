@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaccion con JavaScript</title>
+</head>
+<body>
+    <h1>Interaccion con JavaScript</h1>
+    <button id="miBoton">Haz click aqui</button>
+    <button id="botonFondo">Cambiar fondo</button>
+    <button id="botonTamaño">Cambiar tamaño</button>
+    <button id="botonRestablecer">Restablecer</button>
+    <p id="resultado">Esperando el click...</p>
+    <script>
+
+        // Seleccionar elementos del DOM
+        const boton = document.getElementById("miBoton");
+        const botonFondo = document.getElementById("botonFondo");
+        const botonTamaño = document.getElementById("botonTamaño");
+        const botonRestablecer = document.getElementById("botonRestablecer");
+        const parrafo = document.getElementById("resultado");
+
+        // Añadir un evento de clic
+        boton.addEventListener("click", function(){
+
+            // Cambiar el contenido del párrafo
+            parrafo.textContent = "Haz hecho click en el boton!"
+
+            // Cambiar estilo
+            parrafo.style.color = "blue";
+            parrafo.style.fontWeight = "bold";
+        });
+
+        botonFondo.addEventListener("click", function(){
+
+            // Cambiar el contenido del párrafo
+            parrafo.textContent = "Haz hecho click en el boton!"
+
+            // Cambiar estilo
+            parrafo.style.backgroundColor = "red";
+        });
+
+        botonTamaño.addEventListener("click", function(){
+
+            // Cambiar el contenido del párrafo
+            parrafo.textContent = "Haz hecho click en el boton!"
+
+            // Cambiar estilo
+            parrafo.style.fontSize = "50px";
+        });
+
+        botonRestablecer.addEventListener("click", function(){
+
+            // Cambiar el contenido del párrafo
+            parrafo.textContent = "Esperando al click..."
+
+            // Cambiar estilo
+            parrafo.style= "none";
+        });
+
+    </script>
+</body>
+</html>

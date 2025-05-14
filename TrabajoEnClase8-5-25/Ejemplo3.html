@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de edad</title>
+</head>
+<body>
+    <h1>Calculadora de edad</h1>
+    <label>Año de nacimiento:</label>
+    <input type="number" id="inputNacimiento">
+    <button id="botonCalcular">Calcular edad</button>
+    <p id="pResultadoEdad"></p>
+    <script>
+        function calcularEdad(parametroNacimiento){
+            const añoActual = new Date().getFullYear();
+            const edad = añoActual - parametroNacimiento;
+
+            if(edad < 0){
+                return `tu edad es ${edad}. Pero en este caso es negativa.`;
+            }else if(edad > 120){
+                return `tu edad es ${edad}. Pero en este caso es mayor a 120.`;
+            }else{
+                return `tu edad es ${edad}!!`;
+            }
+        }
+        document.getElementById("botonCalcular").addEventListener("click", function(){
+            const variableNacimiento = document.getElementById("inputNacimiento").value;
+            const variableResultado = calcularEdad(Number(variableNacimiento));
+            document.getElementById("pResultadoEdad").textContent = variableResultado;
+        });
+    </script>
+</body>
+</html>
