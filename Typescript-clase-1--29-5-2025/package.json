@@ -1,0 +1,17 @@
+{
+  "name": "typescript-29-5-2025-clase1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
