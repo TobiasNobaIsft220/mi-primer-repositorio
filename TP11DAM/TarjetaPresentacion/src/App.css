@@ -1,0 +1,78 @@
+*{
+  background-color: lightblue;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+h1{
+  background-color: pink;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  font-size: 15vh;
+  color: #323641;
+}
+
+h2{
+  background-color: pink;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  font-size: 10vh;
+  color: #323641;
+}
+
+p{
+  color: pink;
+  background-color: pink;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+img{
+  width: 65vh;
+  height: 75vh;
+  background-color: pink;
+  border-radius: 3vh;
+}
+
+.titulo{
+  font-size: 20vh;
+}
+
+.contenedor{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta{
+  width: 90vw;
+  height: 80vh;
+  display: inline-flex;
+  border: solid black 1px;
+  background-color: pink;
+}
+
+.izquierda{
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+ 
+}
+
+.derecha{
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+
+.informacion{
+  display: block;
+  background-color: pink;
+}
