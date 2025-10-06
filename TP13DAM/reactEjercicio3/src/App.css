@@ -1,0 +1,9 @@
+.centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evento{
+    text-align: center;
+}
