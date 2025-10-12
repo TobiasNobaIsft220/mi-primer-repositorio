@@ -1,0 +1,25 @@
+.productoDisponible{
+    color: green;
+}
+
+.productoAgotado{
+    color: red;
+}
+
+.contadorProductos{
+    display: flex;
+}
+
+.contadorProductos button{
+    height: 5vh;
+    background-color: wheat;
+    border-radius: 1vh;
+}
+
+.contadorProductos p{
+    margin-top: 0;
+}
+
+.botonResetear{
+    width: 11vh;
+}
