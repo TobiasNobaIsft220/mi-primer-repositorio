@@ -1,3 +1,5 @@
+import './InputField.css';
+
 interface InputFieldProps {
     label: string;
     type: string;
@@ -11,6 +13,7 @@ export function InputField(props: InputFieldProps){
         <div>
             <div className="input-field">
                 <label>{props.label}</label>
+                <br/>
                 <input 
                     type={props.type} 
                     value={props.value}

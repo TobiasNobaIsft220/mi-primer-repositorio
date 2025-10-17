@@ -1,7 +1,18 @@
-body{
-  background-color: rgb(75, 75, 75);
+#root{
+  height: 100%;
+  width: 100%;
 }
 
-h1{
-  color: white;
+body{
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }

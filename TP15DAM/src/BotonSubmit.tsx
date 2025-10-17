@@ -1,3 +1,5 @@
+import './BotonSubmit.css';
+
 interface BotonSubmitProps {
     texto: string;
     onClick: (e: React.FormEvent) => void;
@@ -5,9 +7,12 @@ interface BotonSubmitProps {
 
 export const BotonSubmit = (props: BotonSubmitProps) => {
     return(
-        <button type="submit" onClick={props.onClick}>
+        <div>
+            <br/>
+            <button type="submit" onClick={props.onClick}>
             {props.texto}
         </button>
+        </div>
     );
 };
 
