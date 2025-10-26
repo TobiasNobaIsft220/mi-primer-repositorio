@@ -1,0 +1,19 @@
+h3{
+    color: rgba(255, 255, 255, 0.87);
+}
+
+p{
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.demonCard{
+    width: 50vh;
+    border: 1px solid white;
+    border-radius: 2vh;
+    background-color: #141414;
+    margin-bottom: 2vh;
+}
+
+img{
+    width: 45vh;
+}
