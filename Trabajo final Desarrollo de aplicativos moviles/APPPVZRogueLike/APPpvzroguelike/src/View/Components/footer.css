@@ -1,0 +1,80 @@
+.pieDePagina{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(33, 37, 41);
+    margin: 0px;
+    display: flex;
+    color: gray;
+}
+
+.pieDePagina img{
+    width: 8vh;
+    height: 8vh;
+}
+
+.pieDePagina p{
+    font-size: 13px;
+}
+
+.divIzquierda{
+    width: 20%;
+    height: 20vh;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.creador{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.creador img{
+    width: 9vh;
+    height: 8vh;
+}
+
+.creador p{
+    font-size: 20px;
+}
+
+.empresas{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#logoPopcap{
+    margin-left: 5vh;
+}
+
+.divDerecha{
+    width: 80%;
+    height: 20vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright{
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 900px) and (pointer: coarse){
+    .pieDePagina{
+        display: none;
+    }
+}

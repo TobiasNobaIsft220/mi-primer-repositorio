@@ -1,0 +1,185 @@
+body{
+    background-color: rgb(33, 37, 41);
+}
+
+.overlaySignUp{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 29, 29, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteRegistro{
+    width: 70vh;
+    height: 80vh;
+    background-color: rgb(33, 37, 41);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;                
+    justify-content: center;      
+    align-items: center; 
+    flex-direction: column;
+    border-radius: 15px;
+    border: solid 3.5px #343A40;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.671));
+}
+
+.parteRegistro h2{
+    margin: 0;
+    font-size: 5vh;
+}
+
+.logoJuegoRegistro{
+    width: 20vh;
+    height: 20vh;
+}
+
+.divRegistro{
+    margin-bottom: 2vh;
+    display: flex;                
+    justify-content: center;      
+    align-items: center; 
+    flex-direction: column;
+}
+
+.divFormularioRegistro{
+    height: 100%;
+}
+
+.divFormularioRegistro input{
+    width: 98%;
+    height: 4.5vh;
+    margin-bottom: 2vh;
+    background-color: #1D2125;
+    color: white;
+    border: solid 1px white;
+}
+
+.divFormularioRegistro p{
+    font-size: 2vh;
+    color: #0366D6;
+    margin: 0;
+}
+
+.divFormularioRegistro a{
+    text-decoration: none;
+    color: #0366D6;
+    margin: 0;
+}
+
+.divFormularioRegistro button{
+    display: block;                
+    justify-content: center;      
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+    height: 6vh;
+    margin-top: 2vh;
+    border-radius: 15px;
+    background-color: #0366D6;
+    color: white;
+    font-size: 3vh;
+    border: none;
+}
+
+.redireccionesDeCuenta{
+    margin: 0;
+}
+
+@media (max-width: 900px) and (pointer: coarse) {
+    .overlaySignUp{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(30, 29, 29, 0.6);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .parteRegistro{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 37, 41);
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        display: flex;                
+        justify-content: flex-start;      
+        align-items: center; 
+        flex-direction: column;
+        border-radius: 15px;
+        border: solid 3.5px #343A40;
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.671));
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    .parteRegistro::-webkit-scrollbar{
+    display: none;
+    }
+
+    .parteRegistro h2{
+        margin: 0;
+        font-size: 5vh;
+    }
+
+    .divFormularioRegistro label{
+        font-size: 3vh;
+    }
+}
+
+@media (orientation: landscape) and (pointer: coarse){
+
+    .divRegistro{
+        margin-top: 2vh;
+    }
+
+    .parteRegistro h2{
+        margin: 0;
+        font-size: 7vh;
+    }
+
+    .parteRegistro::-webkit-scrollbar{
+    display: none;
+    }
+
+    .divFormularioRegistro{
+        width: 30%;
+    }
+
+    .divFormularioRegistro label{
+        font-size: 4vh;
+    }
+
+    .divFormularioRegistro input{
+        width: 98%;
+        height: 8vh;
+        margin-bottom: 2vh;
+        background-color: #1D2125;
+        color: white;
+        border: solid 1px white;
+    }
+    
+    .divFormularioRegistro button{
+        display: block;                
+        justify-content: center;      
+        align-items: center; 
+        flex-direction: column;
+        width: 100%;
+        height: 10vh;
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+        border-radius: 15px;
+        background-color: #0366D6;
+        color: white;
+        font-size: 4vh;
+        border: none;
+    }
+}

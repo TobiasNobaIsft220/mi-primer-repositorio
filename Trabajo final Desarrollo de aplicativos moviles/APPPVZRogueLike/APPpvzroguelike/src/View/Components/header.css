@@ -1,0 +1,177 @@
+.logoJuego{
+    width: 10vh;
+    height: 10vh;
+    margin: 0px;
+}
+
+#botonCuenta{
+    height: 7vh;
+    width: 7vh;
+    margin: 0px;
+}
+
+#botonScore{
+    height: 7vh;
+    width: 12vh;
+    margin: 0px;
+}
+
+#botonHome{
+    height: 7vh;
+    width: 7vh;
+    margin: 0px;
+}
+
+#botonIniciarSesion{
+    height: 7vh;
+    width: 7vh;
+    margin: 0px;
+}
+
+#botonSobreNosotros{
+    height: 7vh;
+    width: 8vh;
+    margin: 0px;
+}
+
+#aBotonJugar{
+    display: none;
+}
+
+.barraDeNavegacion{
+    display: inline-flex;
+    vertical-align: middle;
+    background-color: yellowgreen;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    margin: 0px;
+}
+
+.barraDeNavegacion a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+@media (max-width: 900px) and (pointer: coarse){
+    .logoJuego{
+        display: none;
+    }
+
+    .barraDeNavegacion{
+        display: inline-flex;
+        vertical-align: middle;
+        background-color: yellowgreen;
+        border-top: solid 3px rgb(148, 190, 62);
+        flex-direction: row;
+        align-content: flex-end;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        width: 100%;
+        height: 10vh;
+        margin: 0px;
+    }
+
+    #aLogoJuego{
+        display: none;
+    }
+
+    #aBotonJugar{
+        display: block;
+    }
+
+    #botonCuenta{
+        height: 5vh;
+        width: 5vh;
+        margin: 0px;
+    }
+
+    #botonScore{
+        height: 6vh;
+        width: 10vh;
+        margin-bottom: 1vh;
+    }
+
+    #botonHome{
+        height: 5vh;
+        width: 5vh;
+        margin: 0px;
+    }
+
+    #botonIniciarSesion{
+        height: 4vh;
+        width: 4vh;
+        margin: 0px;
+    }
+
+    #botonSobreNosotros{
+        height: 5vh;
+        width: 6vh;
+        margin: 0px;
+    }
+
+    #botonJugar{
+        height: 6vh;
+        width: 6vh;
+        margin: 0px;
+    }
+
+    .barraDeNavegacion{
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+    }
+
+    .barraDeNavegacion a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 60%;
+    }
+}
+
+@media (orientation: landscape) and (pointer: coarse){
+
+    #botonCuenta{
+        height: 10vh;
+        width: 10vh;
+        margin: 0px;
+    }
+
+    #botonScore{
+        height: 12vh;
+        width: 18vh;
+        margin: 0px;
+    }
+
+    #botonHome{
+        height: 10vh;
+        width: 10vh;
+        margin: 0px;
+    }
+
+    #botonIniciarSesion{
+        height: 9vh;
+        width: 9vh;
+        margin: 0px;
+    }
+
+    #botonSobreNosotros{
+        height: 10vh;
+        width: 12vh;
+        margin: 0px;
+    }
+
+    #botonJugar{
+        height: 12vh;
+        width: 12vh;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(33, 37, 41);
+}
+
+.parteNovedad{
+    width: 100%;
+    height: 90vh;
+    margin: 0px;
+    background-image: url("../../imagenes/fondoPagina.png");
+    background-size: cover;
+    background-position: center;        
+    background-repeat: no-repeat;  
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlayNovedad{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 29, 29, 0.6);
+    display: flex;               
+    justify-content: center;      
+    align-items: center; 
+}
+
+.novedadTexto{
+    width: 70%;
+    height: 70vh;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    text-align: left;
+    color: white;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.novedadTexto::-webkit-scrollbar{
+    display: none;
+}
+
+.textoNovedad2{
+    width: auto;
+    height: auto;
+    margin: 20px;
+    
+}
+
+.textoNovedad2 h3{
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 5vh;
+}
+
+.textoNovedad2 p{
+    font-size: 110%;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) and (pointer: coarse){
+
+    .overlayNovedad{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(30, 29, 29, 0.6);
+        display: flex;               
+        justify-content: center;      
+        align-items: flex-start; 
+    }
+
+    .novedadTexto{
+        width: 100%;
+        height: 100%;
+        background-color: yellowgreen;
+        border-radius: 0;
+        text-align: left;
+        color: white;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    .novedadTexto::-webkit-scrollbar{
+    display: none;
+    }
+
+    .novedadTexto img{
+        padding: 5%;
+        width: 90%;
+        height: auto;
+    }
+
+    .textoNovedad2{
+        width: auto;
+        height: 90%;
+        margin-bottom: 20vh;
+    }
+
+    .textoNovedad2 h3{
+        margin: 0px;
+        font-size: 5vh;
+    }
+
+    .textoNovedad2 p{
+        font-size: 2vh;
+    }
+}
+
+@media (orientation: landscape){
+    .textoNovedad2 h3{
+        margin: 0px;
+        font-size: 7vh;
+    }
+
+    .textoNovedad2 p{
+        font-size: 4vh;
+    }
+}
